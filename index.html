@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TI-DASS&INSERVETION</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--***********************************************************NAVBAR***************************************************************** --->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top">
+        <div class="container">
+            <div class="navbar-brand">
+                TI-DASS&INSERVETION
+            </div>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarText">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarText" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-2.html#evenement">Nos Évenements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page-2.html#conteneur">Points de Dépôts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--***********************************************************NAVBAR\**************************************************************** --->
+
+    <!--***********************************************************CAROUSEL*************************************************************** --->
+    <header id="PetitCarousel">
+        <div class="carousel slide carousel-fade d-sm-none d-md-none d-lg-block" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <li data-bs-target="#PetitCarousel" data-bs-slide-to="0"></li>
+                <li data-bs-target="#PetitCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#PetitCarousel" data-bs-slide-to="2"></li>
+                </ul>
+            </div>
+
+            <!-- CONTENU -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/collecte-1.jpg" alt="pancarte de donation" class="w-100 d-block" height="550">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Baniere.jpg" alt="dons" class="w-100 d-block" height="550">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/collecte-3.jpg" alt="stockage de vêtements" class="w-100 d-block" height="550">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--**********************************************************CAROUSEL\*************************************************************** --->
+
+    <!--*********************************************************SECTION EVENEMENT******************************************************** --->
+    <section style="background-image: url( 'images/BaniereEvenement2.png' )">
+        <div class="container">
+            <div class="row">
+
+                <div class="col p-5">
+                    <h2 class="text-center text-dark">
+                        La Grande Collecte
+                        <span class="d-block fw-light mt-5">Durant tout le mois de juin 2022</span>
+                    </h2>
+
+                    <div class="dropdown text-center">
+                        <button type="button" class="btn btn-outline-info dropdown-toggle text-dark" data-bs-toggle="dropdown">
+                             Prochains Èvénements
+                        </button>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-center text-danger fw-bold" href="#">Collecte de fonds Internationale</a>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width:57%">57%</div>
+                            </div>
+
+                            <a class="dropdown-item mt-2" href="page-2.html">La grande collecte du mercredi 1 juin au Jeudi 31 juin</a>
+                            <a class="dropdown-item mt-2" href="#">Mercredi 20/07/2022 Parc des expositions "la collecte de la Solidarité"</a>
+                            <a class="dropdown-item mt2" href="#">Mercredi 03/07/2022 Le grand stand de l'insertion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--*********************************************************SECTION EVENEMENT\******************************************************* --->
+
+    <!--*********************************************************SECTION CARD************************************************************* --->
+    <section class="p-5">
+
+        <div class="container">
+            <h2 class="p-5">Qui sommes nous</h2>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card m-3">
+                        <img src="images/equipeInsertion.jpg" alt="équipe d'insertion" />
+                        <div class="card-body  text-center" style="min-height: 100px">
+                            <h3>Notre équipe d'insertion</h3>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn w-100 btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#equipe">Nos compétences</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card m-3">
+                        <img src="images/activiteInsertion.jpg" alt="formations" class="card-img-top" />
+                        <div class="card-body  text-center" style="min-height: 100px">
+                            <h3>Nos formations</h3>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn w-100 btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#formation">Actuellement</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card m-3">
+                        <img src="images/evenement.jpg" alt="Baguette" class="card-img-top" />
+                        <div class="card-body text-center" style="min-height: 100px">
+                            <h3 class="text-center">Nos ateliers découverts</h3>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn w-100 btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#atelier">Information</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--********************************************************* SECTION CARD\*********************************************************** --->
+
+    <!--********************************************************* PRESENT ATION ********************************************************** --->
+    <section>
+        <div class="bg-dark text-white mt-5">
+            <h1 class="text-center">Présentation</h1>
+        </div>
+
+        <div class="pt-5 m-3">
+            <p class="presentation lead">Ti-DASS&INSERVETION (Insertion par le vêtement) est une Association, créée en 1995 en collaboration avec l'association intermédiaire du Mans <span class="fw-bold">Le Relay</span>, nous sommes spécialisées dans le tri et la redistribution de
+                vêtements.
+            </p>
+            <p class="lead">Notre association adhère à la charte "<span class="fw-bold">Tissons la solidarité</span> ", élaborée et mise en place en collaboration avec de nombreuses Associations d'insertion travaillant avec le vêtement.
+            </p>
+        </div>
+    </section>
+    <!--*********************************************************PRESENTATION\*********************************************************** --->
+
+    <!--*********************************************************NOS IMPERATIF*********************************************************** --->
+    <article class="mt-3">
+        <h2 class="p-4">Nos Impératifs</h2>
+        <p class="lead pb-5 m-3">Soucieux de la difficulté que rencontrent les personnes en réinsertion, nous avons pour objectifs d'être les acteurs de l'insertion des personnes en difficulté en permettant aux femmes en difficulté de travail de développer des parcours d'insertion
+            afin de s'insérer plus facilement dans le monde professionnel, répondre aux besoins vestimentaires des familles les plus démunis, en redistribuant des vêtements de bonne qualité.
+        </p>
+    </article>
+
+    <section>
+        <div id="collecte">
+            <h2 class="card-title text-center pt-5">"La grande collecte"</h2>
+            <div class="card-body m-4">
+                <p class="card-text lead  m-4">Comme chaque année TI-DASS&INSERVETION a lancé, avec Emmaüs et une trentaine d'associations locales, l'opération "La grande collecte", une grande collecte de vêtements, de chaussures et de jouets d'occasion dans toute la France.</p>
+                <p class="card-text lead  m-4">Une mobilisation qui ne sera pas de trop : avec la crise sanitaire, en 2020, le nombre de bénéficiaires avait augmenté, en même que le nombre de donateurs était, lui, revu à la baisse.</p>
+                <p class="card-text lead text-danger m-4"><strong> Nous avons besoin de vos dons de vêtements. Ils nous sont aujourd'hui de plus en plus nécessaires pour nous permettre de répondre aux besoins qui s'accroissent.</strong>
+            </div>
+
+            <p class="text-center">MERCI de votre aide.</p>
+            <div class="text-center">
+                <a href="#" class="btn btn-dark">NOUS REJOINDRE</a>
+            </div>
+        </div>
+    </section>
+    <!--***********************************************************NOS IMPERATIFS\******************************************************* --->
+
+    <!--**********************************************************FORMULAIRE************************************************************* --->
+    <a id="contact"></a>
+    <form method="post" action="" class="pt-5">
+        <h3 class="p-3">Nous contacter :</h3>
+
+        <fieldset class="bg-secondary text-white m-5 pt-5">
+            <p>
+                <label for="prenom" class="form-label">Prénom</label>
+                <input type="text" id="prenom" class="form-control-sm" name="prenom" placeholder="Votre prénom" required>
+            </p>
+            <p>
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control-sm" id="nom" name="nom" placeholder="Votre nom" required>
+            </p>
+            <p>
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control-sm" id="email" name="email" placeholder="Votre Email" required>
+            </p>
+            <p>
+                <div class="input-group pt-3">
+                    <span class="input-group-text text">Votre message</span>
+                    <textarea class=" pt-5 form-control"></textarea></p>
+            </div>
+
+        </fieldset>
+        <p class="text-center p-3">
+            <button type="button" class="btn bg-dark text-white">Envoyez</button>
+        </p>
+    </form>
+    <!--********************************************************* FORMULAIRE\************************************************************ --->
+
+    <!--********************************************************* FOOTER***************************************************************** --->
+    <footer class="pt-4 ">
+        <div class="bg-dark text-white pt-1 ">
+            <p class=" text-center mt-3 ">© 2021 TI-DASS&INSERVETION - Tous les droits sont réservés. </p>
+            <p class="text-center pb-2 ">Réalisation : Rosine David</p>
+
+            <div class="text-center ">
+                <a href="# "><img src="images/icon-fb.png" width="30" height="30" alt="icône Facebook"></a>
+                <a href="# "><img src="images/icon-twitter.png" width="30" height="30" alt="icône Twitter"></a>
+                <a href="# "><img src="images/icon-insta-.png" width="30" height="30" alt="icône Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <!--********************************************************* FOOTER\**************************************************************** --->
+
+    <!--********************************************************* MODAL**************************************************************** --->
+    <div id="equipe" class="modal fade" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>L'insertion un travail d'équipe</h3>
+                    <!-- Le bouton pour fermer la fenêtre modale -->
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Accompagnement. Les référents de parcours rencontrent mensuellement chacun des collaborateurs qu’ils suivent.</p>
+                    <p>Les référents s’assurent que les collaborateurs tiennent leurs engagements de formation.</p>
+                    <p>Certains sont spécialisés dans le domaine social, le domaine technique et d’autres connaissent parfaitement les dispositifs de retour à l’emploi.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom">Nous Contacter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="formation" class="modal fade" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Dispositif d’insertion professionnel</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                    <!-- Le bouton pour fermer la fenêtre modale -->
+                </div>
+                <div class="modal-body">
+                    <p>Le stage découverte est destiné aux jeunes ayant défini leur projet professionnel avec nos conseillers. Il sert à découvrir le métier d’une durée de 3 à 5 jours.</p>
+                    <p>Le stage d’orientation permet de développer les compétences de bases nécessaires au métier, de confirmer le choix du projet de formation et de se faire évaluer par des professionnels de la branche. </p>
+                    <p>Le stage d’intégration est utilisé par les entreprises dans le cadre du préapprentissage. Il permet d’approfondir les connaissances du métier et de se familiariser avec les différentes activités de la profession.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom">Nous Contacter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="atelier" class="modal fade" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Principaux ateliers</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                    <!-- Le bouton pour fermer la fenêtre modale -->
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Création et entretien espaces verts</li>
+                        <li>Menuiserie</li>
+                        <li>Blanchisserie / Repasserie</li>
+                        <li>Restauration collective</li>
+                        <li>Solutions Informatiques</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bientôt disponible">Nous Contacter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--********************************************************* MODAL\**************************************************************** --->
+
+
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html
